@@ -3,9 +3,9 @@ public class Simulator {
 
 	public static void main(String[] args) {
 		
-		Car ferrari = new Car();
+		Car ferrari458 = new Car();
 		
-		ferrari.run();
+		ferrari458.run();
 
 	}
 
