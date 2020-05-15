@@ -5,7 +5,7 @@ public class CarPart implements Functional {
 	
 	public void status() {
 		
-		System.out.println("The status of this part is " + condition + ".");
+		System.out.println("The condition of this part is " + condition + ".");
 		
 	}
 	
