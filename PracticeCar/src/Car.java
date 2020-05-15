@@ -6,32 +6,32 @@ import java.util.Iterator;
 
 public class Car {
 	
-	Car(Transmission t, Engine e){
-		
-		this.t = t;
-		this.e = e;
+	public Car(){
 		
 	}
 	
-	Transmission t = new Transmission();
-	Engine e = new Engine();
-	
-	//make static???
-	
 	public void run() {
 		 
-		Set partSet = new HashSet();
+		Transmission t = new Transmission();
+		Engine e = new Engine();
+		
+		Set<Object> partSet = new HashSet<Object>();
 		
 		partSet.add(t);
 		partSet.add(e);
 		
-		Iterator<String> itr = partSet.iterator(); // traversing over HashSet System.out.println("Traversing over Set using Iterator"); while (itr.hasNext()) { System.out.println(itr.next()); }
-
-		while (((Iterator<String>) itr).hasNext()) {
+		Iterator<Object> itr = partSet.iterator();
+		
+		while (((Iterator<Object>) itr).hasNext()) {
+			
+			e.function();
+			
+			System.out.println();
 			
 			t.function();
-			e.function();
-			  
+			
+			break;
+			
 	    }
 		 
 	 }
