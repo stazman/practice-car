@@ -13,7 +13,7 @@ public class CarPart implements Functional {
 			
 		} else {
 			
-			System.out.println("The condition of this part is " + condition + ".");
+			System.out.println("This condition of this part is completely unusable.");
 			
 		}
 			
