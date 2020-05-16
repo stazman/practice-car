@@ -1,30 +1,21 @@
 
 public class Transmission extends CarPart {
 	
-	
 	byte numberOfSpeeds = 7;
 	
-	
 	public void shiftGears() {
+		System.out.print("this car can be shifted with precision.");
 		
-		System.out.print("its gears are being shifted madly on a curvy road!");
-		
+		System.out.println();
 	}
-	
+		
 	public void status(){
-		
 		super.status();
-		
-		int transCond = 100;
-		
-		System.out.println("This car has a condition of " + transCond + ".");
-		
 	}
-	
 	
 	public void function(){
 		
-		System.out.print("This car is a " + numberOfSpeeds + "-speed " + "and ");
+		System.out.print("The transmission has " + numberOfSpeeds + " speeds; ");
 		
 		shiftGears();
 		
